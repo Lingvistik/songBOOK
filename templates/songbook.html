@@ -1,0 +1,40 @@
+{% extends 'base.html'%} {% block content %}
+
+<h1>Songs</h1>
+<br>
+
+<div class="container">
+  <div class="row">
+    {% for chord in chords %}
+
+    <div class="col s12 m6">
+      <div class="card horizontal">
+        <div class="card-image">
+          <img src="https://lorempixel.com/100/190/nature/6">
+        </div>
+        <div class="card-stacked">
+          <div class="card-content">
+            <h3>{{chord.band_name}}</h3>
+            <h4>{{chord.song_name}}</h4>
+          </div>
+          <div class="card-action">
+            
+            <div class="modal">
+              <div class="modal-background">test</div>
+              <div class="modal-content">
+                <!-- Any other Bulma elements you want -->
+              </div>
+              <button class="modal-close is-large" aria-label="close"></button>
+            </div>
+          
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {% endfor %}
+  </div>
+</div>
+
+
+{% endblock %}

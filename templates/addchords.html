@@ -1,0 +1,38 @@
+{% extends 'base.html'%}
+{% block content %}
+
+<h2 class="title">Add Your Song!</h2>
+
+<div class="container">
+    <form action="{{url_for('insert_chords')}}" method="POST" enctype="multipart/form-data"> 
+        <div class="field">
+            <label class="label">Band Name</label>
+            <div class="control">
+                <input id="band_name" name="band_name" class="input" type="text" placeholder="Text input">
+            </div>
+        </div>
+
+        <div class="field">
+            <label class="label">Song Name</label>
+            <div class="control">
+                <input id="song_name" name="song_name" class="input" type="text" placeholder="Text input">
+            </div>
+        </div>
+
+        <div class="field">
+            <label class="label">Chords</label>
+            <div class="control">
+                <textarea id="chords_text" name="chords_text" class="textarea" placeholder="Textarea"></textarea>
+            </div>
+        </div>
+
+       
+        <div class="field">
+            <div class="control">
+                <button class="button is-link">Submit</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+{% endblock %}
