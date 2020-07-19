@@ -6,23 +6,23 @@
 <div class="container">
     <form action="{{url_for('insert_chords')}}" method="POST" enctype="multipart/form-data"> 
         <div class="field">
-            <label class="label">Band Name</label>
+            <label class="label">Artist Name</label>
             <div class="control">
-                <input id="band_name" name="band_name" class="input" type="text" placeholder="Text input">
+                <input id="band_name" name="band_name" class="input" type="text" placeholder="Type a name of the band or the artist">
             </div>
         </div>
 
         <div class="field">
             <label class="label">Song Name</label>
             <div class="control">
-                <input id="song_name" name="song_name" class="input" type="text" placeholder="Text input">
+                <input id="song_name" name="song_name" class="input" type="text" placeholder="Type a name of the song">
             </div>
         </div>
 
         <div class="field">
             <label class="label">Chords</label>
             <div class="control">
-                <textarea id="chords_text" name="chords_text" class="textarea" placeholder="Textarea"></textarea>
+                <textarea id="chords_text" name="chords_text" class="textarea" placeholder="Input the text with the chords in a format you like to be shown"></textarea>
             </div>
         </div>
 

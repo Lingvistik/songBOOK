@@ -1,0 +1,25 @@
+body {
+    text-align: center;
+}
+
+.title {
+    margin-top: 20px;
+}
+
+.nav-wrapper {
+    background-color: cadetblue;
+}
+
+#logo {
+    padding-top: 5px;
+}
+
+@media only screen and (max-width: 800px) {
+    #diagram {
+        width: 355px;
+    }
+
+    #chart-title {
+        font-size: 35px;
+    }
+}

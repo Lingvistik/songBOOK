@@ -14,19 +14,16 @@
         </div>
         <div class="card-stacked">
           <div class="card-content">
-            <h3>{{chord.band_name}}</h3>
             <h4>{{chord.song_name}}</h4>
+            <h5>{{chord.band_name}}</h5>
           </div>
           <div class="card-action">
             
-            <div class="modal">
-              <div class="modal-background">test</div>
-              <div class="modal-content">
-                <!-- Any other Bulma elements you want -->
-              </div>
-              <button class="modal-close is-large" aria-label="close"></button>
-            </div>
-          
+            <a href="{{url_for('show_chords', chord_id=chord._id)}}" class="waves-effect waves-light btn btn_small blue">Chords</a>
+            <br>
+            <a href="" class="waves-effect waves-light btn btn_small">Edit</a>
+            <a href="{{url_for('delete_chords', chord_id=chord._id)}}" onclick="return confirm('Are you sure you want to delete this song?');" class="waves-effect waves-light btn btn_small red">Delete</a>
+        
           </div>
         </div>
       </div>
