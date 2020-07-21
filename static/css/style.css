@@ -1,5 +1,10 @@
+html {
+    font-family: Abel, sans-serif;
+  }
+
 body {
     text-align: center;
+    background-color: rgb(188, 194, 194);
 }
 
 .title {
@@ -7,11 +12,16 @@ body {
 }
 
 .nav-wrapper {
-    background-color: cadetblue;
+    background-color: rgb(2, 3, 3);
 }
 
 #logo {
     padding-top: 5px;
+}
+
+.card-image {
+    width: 250px !important; 
+    height: 250px !important;
 }
 
 @media only screen and (max-width: 800px) {

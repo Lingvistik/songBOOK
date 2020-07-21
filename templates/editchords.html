@@ -1,0 +1,38 @@
+{% extends 'base.html'%}
+{% block content %}
+
+<h2 >Edit Your Song!</h2>
+
+<div class="container">
+    <div class="row">
+        <form class="col s12" action="{{url_for('update_chords', chord_id=chords._id)}}" method="POST" enctype="multipart/form-data">
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="band_name" type="text" name="band_name" class="validate" value="{{chords.band_name}}">
+                    <label for="band_name">Artist Name</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="song_name" type="text" name="song_name" class="validate" value="{{chords.song_name}}">
+                    <label for="song">Song Name</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <textarea id="chords_text" class="materialize-textarea" name="chords_text">{{chords.chords_text}}</textarea>
+                    <label for="chords">Chords</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <div class="control">
+                        <button class="btn" type="submit" name="action">Save</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+{% endblock %}
